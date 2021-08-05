@@ -1,44 +1,47 @@
 import { Request, Response } from 'express';
 
-export class userController {
-    constructor() {}
-    async create (req: Request, res:Response){
+export class UserController {
+    constructor(
+        
+    ) {}
+    async create (req: Request, res:Response): Promise<any>{
         try {
             
-        } catch (err) {
-            res.status(400).send({ error: err.message });
+        } catch (err: any) {
+            res.status(400).send({ message: err.message, code: err.status });
         }
     }
 
-    async update (req: Request, res:Response){
+    async update (req: Request, res:Response): Promise<any>{
         try {
             
-        } catch (err) {
-            res.status(400).send({ error: err.message });
+        } catch (err: any) {
+            res.status(400).send({ message: err.message, code: err.status });
         }
     }
 
-    async getAllUsers (req: Request, res:Response){
+    async getAllUsers (req: Request, res:Response): Promise<any>{
         try {
             
-        } catch (err) {
-            res.status(400).send({ error: err.message });
+        } catch (err: any) {
+            res.status(400).send({ message: err.message, code: err.status });
         }
     }
 
-    async getUser (req: Request, res:Response){
+    async getUser (req: Request, res:Response): Promise<any>{
         try {
             
-        } catch (err) {
-            res.status(400).send({ error: err.message });
+        } catch (err: any) {
+            res.status(400).send({ message: err.message, code: err.status });
         }
     }
 
-    async deleteUser (req: Request, res:Response){
+    async deleteUser (req: Request, res:Response): Promise<any>{
         try {
             
-        } catch (err) {
-            res.status(400).send({ error: err.message });
+        } catch (err: any) {
+            res.status(400).send({ message: err.message, code: err.status });
         }
     }
 }
+export const userController = new UserController()
