@@ -24,12 +24,12 @@ Content-Type: application/json
 }
 ###
 
-GET http://localhost:3000/users/a481c037-c217-4b95-885a-2bb0c679aefd
+GET http://localhost:3000/users/29e5493a-f8a4-4ecc-99b2-c8ff0faab9af
 Content-Type: application/json
 ###
 
 
-DELETE  http://localhost:3000/users/a481c037-c217-4b95-885a-2bb0c679aefd
+DELETE http://localhost:3000/users/a481c037-c217-4b95-885a-2bb0c679aefd
 Content-Type: application/json
 ###
 
