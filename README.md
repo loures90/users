@@ -8,7 +8,7 @@ After cloning this repository, install all dependences.
 
         npm install
 
-Make sure you have MongoDB Compass in your machine. Then create a new Schema called 'users'. Then use the command 
+Make sure you have MongoDB Compass in your machine. Then create a new Schema called 'users'. Then use the command below to start the application.
 
         npm run start
 
