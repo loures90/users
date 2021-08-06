@@ -7,7 +7,7 @@ export const user1 = { id: "abc123", name: "Name", email: "email@email.com", age
 
 export class UserDataMock extends UserData {
     async create(user: userInput) {
-        return { message: "User created successfully." }
+        return { message: "User created successfully" }
     }
 
     async update(id: string, user: userInput) {

@@ -7,7 +7,7 @@ const DataSchema = new mongoose.Schema({
     age: String
 })
 
-export const UserMongoDB = mongoose.model('cars', DataSchema)
+export const UserMongoDB = mongoose.model('users', DataSchema)
 
 export class User {
     constructor(
