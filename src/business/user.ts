@@ -1,46 +1,47 @@
 import { userData, UserData } from "../database/user"
+import { userInput } from "../model/user"
 import { idGenerator, IdGenerator } from "../services/idGenerator"
 
 export class UserBusiness {
     constructor(
         private idGenerator: IdGenerator,
         private userData: UserData
-    ) {}
-    async create (){
+    ) { }
+    async create(user: userInput) {
         try {
-            
+
         } catch (err) {
             throw err
         }
     }
 
-    async update (){
+    async update(user: userInput, id: string) {
         try {
-            
+
         } catch (err) {
             throw err
         }
     }
 
-    async getAllUsers (){
+    async getAllUsers() {
         try {
-            
+
         } catch (err) {
             throw err
         }
     }
 
-    async getUser (){
+    async getUser(id: string) {
         try {
-            
+
         } catch (err) {
             throw err
         }
     }
 
-    async deleteUser (){
+    async deleteUser(id: string) {
         try {
-            
+
         } catch (err) {
             throw err
         }
