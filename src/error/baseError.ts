@@ -3,4 +3,4 @@ export class BaseError extends Error {
       super(message);
     }
   }
-  
+ export const baseError = new BaseError("", 400)

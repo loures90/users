@@ -1,7 +1,8 @@
+import { userInput } from "../model/user"
 
 export class UserData {
     constructor() {}
-    async create (){
+    async create (user: userInput):Promise<any>{
         try {
             
         } catch (err) {
@@ -9,7 +10,7 @@ export class UserData {
         }
     }
 
-    async update (){
+    async update (id: string, user: userInput):Promise<any>{
         try {
             
         } catch (err) {
@@ -17,7 +18,7 @@ export class UserData {
         }
     }
 
-    async getAllUsers (){
+    async getAllUsers ():Promise<any>{
         try {
             
         } catch (err) {
@@ -25,7 +26,7 @@ export class UserData {
         }
     }
 
-    async getUser (){
+    async getUser (id: string):Promise<any>{
         try {
             
         } catch (err) {
@@ -33,7 +34,15 @@ export class UserData {
         }
     }
 
-    async deleteUser (){
+    async getUserByEmail (email: string):Promise<any>{
+        try {
+            
+        } catch (err) {
+            throw err
+        }
+    }
+
+    async deleteUser (id:string):Promise<any>{
         try {
             
         } catch (err) {

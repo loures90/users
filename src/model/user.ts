@@ -1,3 +1,14 @@
+const mongoose = require("mongoose");
+
+const DataSchema = new mongoose.Schema({
+    id:String,
+    name: String,
+    email: String,
+    age: String
+})
+
+export const UserMongoDB = mongoose.model('cars', DataSchema)
+
 export class User {
     constructor(
         private id: string,
