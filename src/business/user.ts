@@ -16,9 +16,12 @@ export class UserBusiness {
                 throw new BaseError("Invalid input", 400);
 
             const emailExist = await this.userData.getUserByEmail(user.email)
-            if (emailExist[0]?.id)
+            console.log(emailExist)
+            if (emailExist[0]?.email)
                 throw new BaseError("E-mail already signed-up.", 400);
-            return await this.userData.create(user)
+            
+            const newUser = {...user, id: this.idGenerator.generate()}
+            return await this.userData.create(newUser)
         } catch (err) {
             throw err
         }
